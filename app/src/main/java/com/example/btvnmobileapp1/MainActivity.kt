@@ -56,7 +56,7 @@ fun ProfileScreen() {
         ) {
             // Nút Back hình bo góc có viền nhẹ
             IconButton(
-                onClick = { /* Xử lý nút back nếu cần */ },
+                onClick = {},
                 modifier = Modifier
                     .size(40.dp)
                     .border(1.dp, Color(0xFFE0E0E0), RoundedCornerShape(10.dp))
@@ -71,7 +71,7 @@ fun ProfileScreen() {
 
             // Nút Edit hình bo góc có viền nhẹ
             IconButton(
-                onClick = { /* Xử lý nút edit nếu cần */ },
+                onClick = {},
                 modifier = Modifier
                     .size(40.dp)
                     .border(1.dp, Color(0xFFE0E0E0), RoundedCornerShape(10.dp))
@@ -79,7 +79,7 @@ fun ProfileScreen() {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_edit),
                     contentDescription = "Edit Profile",
-                    tint = Color(0xFF00C853), // Màu xanh lá như trong mẫu
+                    tint = Color(0xFF00C853), 
                     modifier = Modifier.size(18.dp)
                 )
             }
@@ -93,7 +93,7 @@ fun ProfileScreen() {
             modifier = Modifier
                 .size(140.dp)
                 .clip(CircleShape)
-                .background(Color(0xFFE8F1FC)) // Lớp nền xanh nhạt xung quanh viền
+                .background(Color(0xFFE8F1FC)) 
         ) {
             Image(
                 painter = painterResource(id = R.drawable.avatar),
@@ -109,7 +109,7 @@ fun ProfileScreen() {
 
         // --- 3. Họ và tên ---
         Text(
-            text = "Nguyễn Minh Anh", // Có thể thay bằng tên của bạn
+            text = "Nguyễn Minh Anh", 
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
             color = Color(0xFF1E1E1E)
